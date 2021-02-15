@@ -1,9 +1,7 @@
 from __future__ import absolute_import
 import torch
-
 # entitiy_to_index = torch.load('../data/processed_data/entity_to_index.pt')
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-
 hidden_size = 768
 maxlen = 40
 epochs = 50
@@ -19,7 +17,7 @@ max_grad_norm = 1
 
 remove_josa = True
 remove_special_char = True
-model_dir = "../models"
+# model_dir = "../models"
 
 eval_during_train = True
 display_eval_plots = False
